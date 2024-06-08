@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// import Editor from "@tinymce/tinymce-vue";
 onMounted(() => {
   const initTinyMCE = () => {
     if (typeof window.tinymce !== 'undefined') {
@@ -50,14 +49,5 @@ const copyContent = () => {
     <button @click="getContent">Get content</button>
     <button @click="insertContent">Insert content</button>
     <button @click="copyContent">Copy content</button>
-    <!-- <ClientOnly>
-      <Editor
-        api-key="no-api-key"
-        :init="{
-          plugins: 'lists link image table code help wordcount',
-        }"
-      />
-    </ClientOnly> -->
-    <NuxtWelcome />
   </div>
 </template>
